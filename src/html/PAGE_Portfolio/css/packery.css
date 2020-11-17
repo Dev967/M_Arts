@@ -1,0 +1,39 @@
+* { box-sizing: border-box; }
+
+/* force scroll bar */
+html { overflow-y: scroll; }
+
+body { font-family: sans-serif; }
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+/* 5 columns, percentage width */
+/* .grid-item, */
+.grid-sizer {
+  /* width: 22%; */
+  width: 32vw;
+  height: 40vh;
+}
+
+.grid-item {
+  float: left;
+  /* height: 100px; */
+  background: rgb(61, 63, 62);
+  border: 2px solid #333;
+  border-color: hsla(0, 5%, 13%, 0.7);
+}
+
+.gutter-sizer { width: 1%; }
+
+img{
+  width: 32vw;
+  box-shadow: black 4px 4px 8px;
+    /* height: 30vh; */
+}
